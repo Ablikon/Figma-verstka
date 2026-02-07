@@ -1,0 +1,260 @@
+/* Connection Progress Page Container */
+.connection-progress-page {
+  max-width: 440px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 48px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 956px;
+  font-family: -apple-system, 'SF Pro Display', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Status Bar */
+.connection-progress-page .status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 21px 16px 19px;
+  background: #ffffff;
+}
+
+.connection-progress-page .time {
+  font-family: 'SF Pro', -apple-system, sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: #000000;
+  line-height: 22px;
+}
+
+.connection-progress-page .status-icons {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.connection-progress-page .status-icon {
+  width: 19.2px;
+  height: 12.2px;
+}
+
+.connection-progress-page .battery-icon {
+  width: 27.3px;
+  height: 13px;
+}
+
+/* Header */
+.connection-progress-page .connection-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18.5px 0 17.5px;
+  background: #ffffff;
+  border-bottom: 1px solid #F5F5F5;
+}
+
+.connection-progress-page .connection-header .header-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+  margin: 0;
+  text-align: center;
+}
+
+/* Content Area */
+.connection-progress-page .connection-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+/* Progress Steps */
+.connection-progress-page .progress-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.connection-progress-page .progress-step {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: opacity 0.3s ease;
+}
+
+.connection-progress-page .progress-step.pending {
+  opacity: 0.5;
+}
+
+.connection-progress-page .progress-step.completed,
+.connection-progress-page .progress-step.active {
+  opacity: 1;
+}
+
+.connection-progress-page .step-icon-wrapper {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Completed step with green checkmark */
+.connection-progress-page .progress-step.completed .step-icon-wrapper {
+  background: #00C770;
+  border-radius: 100px;
+}
+
+.connection-progress-page .check-icon-completed {
+  font-size: 12px;
+  color: #FFFFFF;
+}
+
+/* Active step with spinner */
+.connection-progress-page .loading-spinner {
+  font-size: 24px;
+  color: #00C770;
+}
+
+.connection-progress-page .loading-spinner .anticon {
+  font-size: 24px;
+}
+
+/* Pending step with empty circle */
+.connection-progress-page .empty-circle {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #D0D5DD;
+  border-radius: 100px;
+  background: transparent;
+}
+
+.connection-progress-page .step-text {
+  font-size: 20px;
+  font-weight: 400;
+  color: #333333;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.connection-progress-page .progress-step.completed .step-text,
+.connection-progress-page .progress-step.active .step-text {
+  font-weight: 500;
+}
+
+/* Security Notice */
+.connection-progress-page .security-notice {
+  display: flex;
+  gap: 4px;
+  padding: 12px;
+  background: #FAFAFA;
+  border-radius: 8px;
+  margin-top: auto;
+}
+
+.connection-progress-page .security-icon-img {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.connection-progress-page .security-text {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.connection-progress-page .security-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #344154;
+  display: block;
+}
+
+.connection-progress-page .security-description {
+  font-size: 12px;
+  font-weight: 400;
+  color: #6D6D6D;
+  display: block;
+  line-height: 1.4;
+}
+
+/* Bottom Section */
+.connection-progress-page .connection-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 16px 34px;
+  background: #ffffff;
+  box-shadow: 0px -4px 16px rgba(0, 0, 0, 0.05);
+}
+
+/* Bottom Navigation Bar */
+.connection-progress-page .bottom-nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  width: 100%;
+}
+
+.connection-progress-page .nav-btn {
+  width: 48px;
+  height: 48px;
+  background: rgba(250, 250, 250, 0.7);
+  border: 1px solid #ffffff;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(20px);
+  box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.1);
+}
+
+.connection-progress-page .nav-icon {
+  font-size: 23px;
+  color: #1B1B1B;
+  font-weight: 300;
+  font-family: 'SF Compact', -apple-system, sans-serif;
+}
+
+.connection-progress-page .browser-bar {
+  flex: 1;
+  height: 48px;
+  background: rgba(250, 250, 250, 0.7);
+  border: 1px solid #ffffff;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 16px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0px 2px 42px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.connection-progress-page .browser-icon {
+  width: 15px;
+  height: 18px;
+}
+
+.connection-progress-page .browser-url {
+  font-size: 17px;
+  font-weight: 500;
+  color: #1B1B1B;
+  font-family: 'SF Pro Text', -apple-system, sans-serif;
+}
+
+/* Responsive adjustments */
+@media (max-width: 440px) {
+  .connection-progress-page {
+    border-radius: 0;
+    max-width: 100%;
+  }
+}
